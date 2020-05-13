@@ -2,7 +2,7 @@
   <div>
     <div id="wrapper">
       <Sidebar :data-toggle="data.dataToggles" @action="toggle()" />
-      <div id="content" :class="$route.name == 'leaderboard' ? 'content-leaderboard' : ''">
+      <div id="content" :class="{ 'content-leaderboard': $route.name == 'leaderboard', 'active': !data.dataToggles }">
         <nuxt />
         <Footer />
       </div>

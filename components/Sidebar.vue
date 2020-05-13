@@ -16,6 +16,14 @@
         <nuxt-link to="/leaderboard">
           Leaderboard
         </nuxt-link>
+        <nuxt-link to="/regulasi">
+          Regulasi
+        </nuxt-link>
+      </li>
+      <li class="text-center">
+        <b-button variant="orange" class="mt-3">
+          <img :src="steam" alt class="mr-2" style="width: 15px; font-size: 11px;"> Login With Steam
+        </b-button>
       </li>
     </ul>
   </nav>
@@ -27,7 +35,8 @@ export default {
   data () {
     return {
       navbar: require('@/assets/images/Icon/navbar.svg'),
-      cross: require('@/assets/images/Icon/cross.svg')
+      cross: require('@/assets/images/Icon/cross.svg'),
+      steam: require('@/assets/images/Icon/steam.svg')
     }
   },
   methods: {
