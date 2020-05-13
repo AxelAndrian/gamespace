@@ -1,0 +1,53 @@
+.table-data {
+  .table {
+    thead {
+      th {
+        letter-spacing: 1.12px;
+        color: white;
+        font-weight: normal;
+        border-bottom: 2px solid #787c8a;
+        background: #38364e;
+        &[aria-sort]::before {
+          color: $secondary-color;
+        }
+        &:focus {
+          outline: 0px !important;
+          -webkit-appearance: none;
+          box-shadow: none !important;
+        }
+      }
+    }
+    th,
+    td {
+      border-top: none;
+      padding: 15px 0.75rem;
+    }
+    tbody {
+      td {
+        color: white;
+        font-size: 11px;
+        font-weight: 500;
+        letter-spacing: 1.13px;
+        vertical-align: middle;
+        word-break: break-all;
+        button {
+          &.btn {
+            padding: 6px 24px !important;
+          }
+        }
+        .btn {
+            padding: 6px 24px !important;
+         }
+      }
+      tr {
+        background: #38364e;
+        &:not(:last-child) {
+          border-bottom: 1px solid #787c8a;
+        }
+        &.b-table-has-details {
+          background: #38364e;
+        }
+      }
+    }
+  }
+}

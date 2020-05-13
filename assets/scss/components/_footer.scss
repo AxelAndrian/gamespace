@@ -1,0 +1,39 @@
+.footer {
+    border-top: 1px solid #3f4048;
+    &-section {
+        padding: 15px;
+    }
+    &-item {
+        width: 30px;
+        height: 30px;
+        margin: 0 20px;
+        &__image {
+            width: 30px;
+            height: 30px;
+            filter: grayscale(1);
+            transition: all .3s ease-in-out;
+        }
+        &:hover {
+            .footer-item__image {
+                filter: grayscale(0);
+            }
+        }
+    }
+}
+
+.footer-countdown {
+    border-top: 1px solid #3f4048;
+    &-section {
+        padding: 15px;
+    }
+    &__timer {
+        font-size: 50px;
+        background-color: #201f2f;
+        padding: 10px;
+        border-radius: 12px;
+    }
+    &__separator {
+        font-size: 50px;
+        margin: 0 6px;
+    }
+}
