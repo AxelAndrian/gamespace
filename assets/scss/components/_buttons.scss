@@ -1,0 +1,7 @@
+.btn {
+    border-radius: 0;
+    padding: 10px 24px !important;
+    &-orange {
+        @include button($white, $secondary-color, $secondary-color, $white, $secondary-color-darken, $secondary-color-darken, $white, $secondary-color-lighten, $secondary-color-lighten);
+    }
+}

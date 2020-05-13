@@ -1,0 +1,21 @@
+@mixin button($color, $bg-color, $border-color, $hv-color, $hv-bg-color, $hv-border-color, $ds-color, $ds-bg-color, $ds-border-color){
+	color: $color !important;
+	background-color: $bg-color !important;
+	border-color: $border-color !important;
+	font-size: 14px !important;
+	font-style: normal;
+	font-weight: bold !important;
+	letter-spacing: 0.5px;
+	line-height: 14px !important;
+	&:hover{
+		color: $hv-color !important;
+		background-color: $hv-bg-color !important;
+		border-color: $hv-border-color !important;
+	}
+	&:disabled {
+		cursor: no-drop;
+		color: $ds-color !important;
+		background-color: $ds-bg-color !important;
+		border-color: $ds-border-color !important;
+	}
+}
