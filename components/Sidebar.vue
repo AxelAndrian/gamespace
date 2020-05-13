@@ -21,7 +21,7 @@
         </nuxt-link>
       </li>
       <li class="text-center">
-        <b-button variant="orange" class="mt-3" style="font-size: 11px;">
+        <b-button variant="orange" class="mt-3" style="font-size: 11px !important;">
           <img :src="steam" alt class="mr-2" style="width: 15px;"> Login With Steam
         </b-button>
       </li>
